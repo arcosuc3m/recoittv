@@ -26,6 +26,7 @@ Current Version is 1.3.10.
 
 We provide the binaries for our application. You can install the files as they are in any folder in which you have execution permissions. 
 Since it is a command line application it is necessary to use a command shell. 
+
 * In the case of Windows we recommend the usage of PowerShell
 * In the case of Linux System ypou can use your preferred shell. 
 
