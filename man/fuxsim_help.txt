@@ -1,0 +1,68 @@
+fux-sim help
+
+[INPUT PARAMETERS]
+
+-y [int int int]
+ mode_simulation:
+	0 - Backprojection
+	1 - Projection
+	2 - Iterative reco (TV3D)
+	3 - Iterative reco (basic)
+ mode_configuration
+	0 - CBCT
+	1 - Lineal wide FOV
+	2 - Tilting wide FOV
+	3 - Lineal tomosynthesis
+	4 - Tilting tomosynthesis
+	5 - Helical
+ mode_kernel
+	0 - voxel/pixel driven
+	1 - distance driven
+	
+-fi [string]	path to input file
+-fo [string]	path to output file
+-x  [int int]	input/output data precision
+	0 - short
+	1 - unsigned short
+	2 - float
+	
+-n  [int]	number of projections
+-s  [float]	initial angle (deg)
+-t  [int]	rotation direction
+	-1 - counter-clockwise
+	 1 - clockwise (default)
+	 
+-b  [int int int]	volume size in voxels
+-r  [int int int]	VOI dimension in voxels
+-o  [float float float]	VOI offset in voxels
+-c  [float float float]	volume voxel size (mm)
+-d  [int int]	projection size (pixels)
+-e  [int int]	projection ROI size (pixels)
+-g  [float float]	projection ROI offset (pixels)
+-u  [float float]	projection pixel size (mm)
+-p  [float]	detector-to-object distance (mm)
+-q  [float]	source-to-object distance (mm)
+-jo [float float] source displacement step (mm) for linear tomosynthesis/linear FOV
+-ra [float float] source angle step (deg) for tilting tomosynthesis/tilting FOV
+-ft [int int] ramp filter options
+	(1) use ramp filter on reconstruction.
+	(2) number of lines to remove to avoid tomosynthesis artifact
+		
+-tv [5xfloat] TV3D parameters
+	alpha
+	mu
+	beta
+	lambda
+	gamma
+	retroNorm
+	
+-kr [float int]	Krylov solver parameters
+	tolKrylov
+	max_iterations
+	
+-vi [int] output view for reconstruction
+	0 - coronal
+	1 - sagittal
+	2 - axial (default)
+						
+												
