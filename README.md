@@ -14,13 +14,13 @@ Current Version is 1.3.10.
 #### Hardware #####
 
 * One NVidia GPU with CUDA support (preferably series 6 or superior).
-* 20 GB RAM (512^3 cubic volume reconstruction).
+* 20 GBytes of RAM (512^3 cubic volume reconstruction).
 
 #### Software ####
 
 * Linux system (Recommended: Ubuntu 14.04 or higher) or Windows system  (7 or higher)
-* NVidia CUDA 7.0 or higher
-* OpenMP 
+* NVidia CUDA 8.0 or higher
+* Support for OpenMP 
 
 ### Set up ###
 
@@ -52,6 +52,11 @@ Since it is a command line application it is necessary to use a command shell.
 
 When citing this SCTV application you can use the following bibtex reference: 
 
+TBA
+
+### Disclaimer ###
+
+The author makes no warranties about the usage of this application or any parts of its contents and accepts no responsibility for any data loss or other system trouble that may occur from its usage.
 
 ### Who do I talk to? ###
 
