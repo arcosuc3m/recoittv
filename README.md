@@ -3,10 +3,10 @@
 
 ### What is this repository for? ###
 We present a new Surface-Constrained Total Variation based (SCTV) method for CBCT based on the Split Bregman algorithm. It takes advantage of the surface information of the sample as an imposed constraint to help in the recovery of the contour of the sample and in the definition of the other edges and details.
-We provide binaries of a command-line application that implements the SCBT method. 
+We provide binaries of a command-line application that implements the SCTV method. 
 
 
-Current Version is 1.3.10. 
+Current Version is 1.4.1. 
 
 
 ### Minimum Requirements ###
@@ -14,13 +14,15 @@ Current Version is 1.3.10.
 #### Hardware #####
 
 * One NVidia GPU with CUDA support (preferably series 6 or superior).
-* 20 GBytes of RAM (512^3 cubic volume reconstruction).
+* 20 GBytes of RAM (512^3 cubic volume reconstruction)*.
+
+*The memory requirements depend on the size of input and output data. 
 
 #### Software ####
 
 * Linux system (x64 architecture) (Recommended: Ubuntu 14.04 or higher) or Windows system  (7 or higher) (x64 architecture).
 * NVidia CUDA 8.0 or higher.
-* Support for OpenMP .
+* Support for OpenMP.
 
 ### Set up ###
 
@@ -71,7 +73,7 @@ Our application accepts the following parameters:
 
 We provide you some samples to test the application, a test call could be: 
 
-./reco-it.exe -fo .\recoTV -fi .\data_0 -a 360 -r 256 256 256 -b 256 256 256 -d 256 256 -n 90 -o 0 0 0 -u 0.2 0.2 -t -1 -c 0.12 0.12 0.12 -q 132 -p 220 -s 0 -h 1 0 0 0 0 0 -tv 0.0003 20 3 2 0 0.00390625 -i 2 -kr 1e-2 100
+<recoit executable path> -fo .\recoTV -fi .\data_0 -a 360 -r 256 256 256 -b 256 256 256 -d 256 256 -n 90 -o 0 0 0 -u 0.2 0.2 -t -1 -c 0.12 0.12 0.12 -q 132 -p 220 -s 0 -h 1 0 0 0 0 0 -tv 0.0003 20 3 2 0 0.00390625 -i 2 -kr 1e-2 100
 
 Please take into account that the calibration file provided and the data must be in the same directory.
 
