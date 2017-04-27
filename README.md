@@ -22,7 +22,7 @@ Current Version is 1.4.1.
 
 * Linux system (x64 architecture) (Recommended: Ubuntu 14.04 or higher) or Windows system  (7 or higher) (x64 architecture).
 * NVidia CUDA 8.0 or higher.
-* Support for OpenMP.
+* Support for multi-core architectures based on OpenMP.
 
 ### Set up ###
 
@@ -31,8 +31,6 @@ Since it is a command line application it is necessary to use a command shell.
 
 * Windows: we recommend the usage of PowerShell
 * Linux System: you can use your preferred shell. 
-
-
 
 
 ### Usage ###
@@ -73,7 +71,9 @@ Our application accepts the following parameters:
 
 We provide you some samples to test the application, a test call could be: 
 
+```
 <recoit executable path> -fo .\recoTV -fi .\data_0 -a 360 -r 256 256 256 -b 256 256 256 -d 256 256 -n 90 -o 0 0 0 -u 0.2 0.2 -t -1 -c 0.12 0.12 0.12 -q 132 -p 220 -s 0 -h 1 0 0 0 0 0 -tv 0.0003 20 3 2 0 0.00390625 -i 2 -kr 1e-2 100
+```
 
 Please take into account that the calibration file provided and the data must be in the same directory.
 
@@ -90,4 +90,7 @@ The author makes no warranties about the usage of this application or any parts 
 ### Who do I talk to? ###
 
 For doubts or problems related to the usage of this software you can contact the following e-mail address:
-TBA
+cmolina@hggm.es
+mabella@hggm.es 
+esserrano@inf.uc3m.es
+fjblas@inf.uc3m.es
