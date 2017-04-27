@@ -2,8 +2,8 @@
 
 
 ### What is this repository for? ###
-We present a new Surface-Constrained Total Variation based (SCTV) method for CBCT based on the Split Bregman algorithm. It takes advantage of the surface information of the sample as an imposed constraint to help in the recovery of the contour of the sample and in the definition of the other edges and details.
-We provide binaries of a command-line application that implements the SCTV method. 
+We present an accelerated implementation of an iterative method for cone-beam CT following the Split Bregman formulation, reducing computational time through GPU-accelerated kernels.
+We provide binaries of a command-line application that implements the method. 
 
 
 Current Version is 1.4.1. 
@@ -41,13 +41,11 @@ Our application accepts the following parameters:
 
 -fi [string]	path to input file
 -fo [string]	path to output file
-
 -n  [int]	number of projections
 -s  [float]	initial angle (deg)
 -t  [int]	rotation direction
   -1 - counter-clockwise
    1 - clockwise (default)
-
 -b  [int int int]	volume size in voxels
 -r  [int int int]	VOI dimension in voxels
 -o  [float float float]	VOI offset in voxels
@@ -60,16 +58,16 @@ Our application accepts the following parameters:
 -q  [float]	source-to-object distance (mm)
 
 -tv [5xfloat] TV3D parameters
-  alpha
-  mu
-  beta
-  lambda
-  gamma
-  retroNorm
+  alpha: threshold for the shrinkage operation
+  mu: weights the data constraint
+  beta: weigths the previous solution constraint
+  lambda: weigths the derivatives constraint
+  gamma: weights the positivity constraint
+  retroNorm: normalization factor to compensate forward projection and backprojection operations
 
 -kr [float int]	Krylov solver parameters
-  tolKrylov
-  max_iterations
+  tolKrylov: convergence criteria
+  max_iterations: maximum number of iterations for Alg.2 if convergence criteria is not reached
 
 We provide you some samples to test the application, a test call could be: 
 
@@ -77,9 +75,9 @@ We provide you some samples to test the application, a test call could be:
 
 Please take into account that the calibration file provided and the data must be in the same directory.
 
-### Citing SCTV ###
+### Citing TV ###
 
-When citing this SCTV application you can use the following bibtex reference: 
+When citing this TV application you can use the following bibtex reference: 
 
 TBA
 
