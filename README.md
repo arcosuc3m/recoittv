@@ -47,9 +47,9 @@ Our application accepts the following parameters:
 
 -t  [int]	rotation direction
 
--1 - counter-clockwise
+  *Tabspace* -1 - counter-clockwise
 
-1 - clockwise (default)
+  *Tabspace* 1 - clockwise (default)
 
 -b  [int int int]	volume size in voxels
 
@@ -72,12 +72,18 @@ Our application accepts the following parameters:
 -q  [float]	source-to-object distance (mm)
 
 -tv [5xfloat] TV3D parameters
-  alpha: threshold for the shrinkage operation
-  mu: weights the data constraint
-  beta: weigths the previous solution constraint
-  lambda: weigths the derivatives constraint
-  gamma: weights the positivity constraint
-  retroNorm: normalization factor to compensate forward projection and backprojection operations
+
+  *Tabspace* alpha: threshold for the shrinkage operation
+ 
+  *Tabspace* mu: weights the data constraint
+  
+  *Tabspace* beta: weigths the previous solution constraint
+  
+  *Tabspace* lambda: weigths the derivatives constraint
+  
+  *Tabspace* gamma: weights the positivity constraint
+  
+  *Tabspace* retroNorm: normalization factor to compensate forward projection and backprojection operations
 
 -kr [float int]	Krylov solver parameters
   tolKrylov: convergence criteria
