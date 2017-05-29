@@ -1,0 +1,15 @@
+
+RecoItTV v1.4 is free software: you can redistribute it and/or modify
+it under the terms of the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 
+International Public License
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.  Please
+see the CREDITS.txt for a non-exhaustive list of contributors and
+copyright holders.  A full text version of the Creative Commons 
+Attribution-NonCommercial-ShareAlike 4.0 International Public License
+can be found in the LICENSE.txt file.  A full text version of the other 
+licenses that ARCA is derivative of or includes can be found in 
+LICENSES.txt.
