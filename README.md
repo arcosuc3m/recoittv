@@ -38,21 +38,37 @@ Since it is a command line application it is necessary to use a command shell.
 Our application accepts the following parameters: 
 
 -fi [string]	path to input file
+
 -fo [string]	path to output file
+
 -n  [int]	number of projections
+
 -s  [float]	initial angle (deg)
+
 -t  [int]	rotation direction
-  -1 - counter-clockwise
-   1 - clockwise (default)
+
+-1 - counter-clockwise
+
+1 - clockwise (default)
+
 -b  [int int int]	volume size in voxels
+
 -r  [int int int]	VOI dimension in voxels
+
 -o  [float float float]	VOI offset in voxels
+
 -c  [float float float]	volume voxel size (mm)
+
 -d  [int int]	projection size (pixels)
+
 -e  [int int]	projection ROI size (pixels)
+
 -g  [float float]	projection ROI offset (pixels)
+
 -u  [float float]	projection pixel size (mm)
+
 -p  [float]	detector-to-object distance (mm)
+
 -q  [float]	source-to-object distance (mm)
 
 -tv [5xfloat] TV3D parameters
