@@ -46,9 +46,10 @@ Our application accepts the following parameters:
 -s  [float]	initial angle (deg)
 
 -t  [int]	rotation direction
->> -1 - counter-clockwise
 
->> 1 - clockwise (default)
+&nbsp;&nbsp;&nbsp; -1 - counter-clockwise
+
+&nbsp;&nbsp;&nbsp; 1 - clockwise (default)
 
 -b  [int int int]	volume size in voxels
 
@@ -72,21 +73,22 @@ Our application accepts the following parameters:
 
 -tv [5xfloat] TV3D parameters
 
-      alpha: threshold for the shrinkage operation
+&nbsp;&nbsp;&nbsp; alpha: threshold for the shrinkage operation
  
-      mu: weights the data constraint
+&nbsp;&nbsp;&nbsp; mu: weights the data constraint
   
-      beta: weigths the previous solution constraint
+&nbsp;&nbsp;&nbsp; beta: weigths the previous solution constraint
   
-      lambda: weigths the derivatives constraint
+&nbsp;&nbsp;&nbsp; lambda: weigths the derivatives constraint
   
-      gamma: weights the positivity constraint
+&nbsp;&nbsp;&nbsp; gamma: weights the positivity constraint
   
-      retroNorm: normalization factor to compensate forward projection and backprojection operations
+&nbsp;&nbsp;&nbsp; retroNorm: normalization factor to compensate forward projection and backprojection operations
 
 -kr [float int]	Krylov solver parameters
-  tolKrylov: convergence criteria
-  max_iterations: maximum number of iterations for Alg.2 if convergence criteria is not reached
+
+&nbsp;&nbsp;&nbsp; tolKrylov: convergence criteria
+&nbsp;&nbsp;&nbsp; max_iterations: maximum number of iterations for Alg.2 if convergence criteria is not reached
 
 We provide you some samples to test the application, a test call could be: 
 
