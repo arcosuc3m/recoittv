@@ -88,6 +88,7 @@ Our application accepts the following parameters:
 -kr [float int]	Krylov solver parameters
 
 &nbsp;&nbsp;&nbsp; tolKrylov: convergence criteria
+
 &nbsp;&nbsp;&nbsp; max_iterations: maximum number of iterations for Alg.2 if convergence criteria is not reached
 
 We provide you some samples to test the application, a test call could be: 
