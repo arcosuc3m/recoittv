@@ -46,10 +46,9 @@ Our application accepts the following parameters:
 -s  [float]	initial angle (deg)
 
 -t  [int]	rotation direction
+>> -1 - counter-clockwise
 
-    -1 - counter-clockwise
-
-    1 - clockwise (default)
+>> 1 - clockwise (default)
 
 -b  [int int int]	volume size in voxels
 
