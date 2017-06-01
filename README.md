@@ -112,9 +112,15 @@ The author makes no warranties about the usage of this application or any parts 
 ### Who do I talk to? ###
 
 For doubts or problems related to the usage of this software, you can contact the following e-mail addresses:
+
 cmolina@hggm.es
-mabella@hggm.es 
-esserrano@inf.uc3m.es
+
+mabella@hggm.es
+
+esserran@inf.uc3m.es
+
 fjblas@inf.uc3m.es
+
 mdesco@inf.uc3m.es
+
 jcarrete@inf.uc3m.es
