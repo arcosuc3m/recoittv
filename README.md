@@ -103,7 +103,7 @@ Please take into account that the calibration file provided and the data must be
 
 When citing this TV application you can use the following bibtex reference: 
 
-TBA
+C. de Molina, E. Serrano, J. Garcia-Blas, J. Carretero, M. Desco, and M. Abella, “GPU-accelerated iterative reconstruction for limited-data tomography in CBCT systems,” BMC Bioinformatics, vol. 19, iss. 1, p. 171, 2018.
 
 ### Disclaimer ###
 
